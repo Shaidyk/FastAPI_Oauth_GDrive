@@ -10,3 +10,4 @@ __pycache__/
 .env
 src/logs/*
 src/credentials/*
+src/user_creds/*
