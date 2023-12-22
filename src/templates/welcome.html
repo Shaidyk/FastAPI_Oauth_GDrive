@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h4>Welcome {{ user['name'] }}</h4>
+            <div class="img-box">
+                <img class="img" src="{{user['picture']}}">
+            </div>
+        </div>
+        <a href="/drive" class="google-btn">
+            <img class="google-icon" src="{{ url_for('static', path='icons/google_icon.png') }}">
+            <span class="btn-text">Open Google Drive</span>
+        </a>
+        <a href="/logout" class="google-btn">
+            <img class="google-icon" src="{{ url_for('static', path='icons/google_icon.png') }}">
+            <span class="btn-text">LogOut</span>
+        </a>
+    </div>
+</body>
+</html>

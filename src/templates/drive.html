@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <a href="/download?file_id=1lSTTjPylVGhj-tpKHRG_szivImrYHSO5" class="google-btn">
+        <span class="btn-text">Download File</span>
+    </a>
+</div>
+<div>
+    <ul>
+        {% for item in items %}
+        <li>
+            {{ item }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="container">
+        <div class="header">
+            <h4>Hello Anonymous</h4>
+            <div class="img-box">
+                <img class="img" src="{{ url_for('static', path='icons/google.png') }}">
+            </div>
+        </div>
+        <a href="/login" class="google-btn">
+            <img class="google-icon" src="{{ url_for('static', path='icons/google_icon.png') }}">
+            <span class="btn-text">SignIn with Google</span>
+        </a>
+    </div>
+{% endblock %}

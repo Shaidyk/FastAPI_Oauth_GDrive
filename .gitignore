@@ -1,0 +1,12 @@
+__pycache__/
+.sass-cache/
+*.py[cod]
+*.session
+*.session-journal
+*$py.class
+.env/
+.venv/
+.idea/
+.env
+src/logs/*
+src/credentials/*
